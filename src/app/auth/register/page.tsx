@@ -83,12 +83,6 @@ export default function RegisterPage() {
           <p className="text-xs text-gray-500 mt-0.5">Join us today! It takes only a few steps.</p>
         </div>
 
-        {message && (
-          <div className={`mb-4 p-2.5 rounded-xl text-center text-xs font-medium ${message.isError ? "bg-red-100 text-red-600 border border-red-200" : "bg-emerald-100 text-emerald-600 border border-emerald-200"}`}>
-            {message.text}
-          </div>
-        )}
-
         <form onSubmit={handleSubmit} className="space-y-3">
           <div>
             <label className="block text-[11px] font-semibold text-gray-600 mb-1">Name</label>
@@ -131,6 +125,12 @@ export default function RegisterPage() {
             </div>
             {isPasswordMatching && <div className="mt-1 flex items-center"><span className="text-[11px] font-bold" style={{ color: "#10b981" }}>Passwords match</span></div>}
           </div>
+
+          {message && (
+            <div className={`p-2.5 rounded-xl text-center text-xs font-medium ${message.isError ? "bg-red-100 text-red-600 border border-red-200" : "bg-emerald-100 text-emerald-600 border border-emerald-200"}`}>
+              {message.text}
+            </div>
+          )}
 
           <div className="flex items-center gap-2 pt-0.5">
             <input type="checkbox" id="terms" checked={formData.agreeTerms} onChange={(e) => setFormData({ ...formData, agreeTerms: e.target.checked })} className="w-3.5 h-3.5 rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
