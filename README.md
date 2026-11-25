@@ -1,1 +1,1 @@
-# manajemensiswa
+# ini merupakan codingan yang hasil dari percobaan dan tugas harian yang dikerjakan setiap saat mendapatkan modul-modul baru dan update kali ini ada penambahan layouting untuk setiap halaman yang ada seperti Dasboard, Siswa, Kelas, dan juga pelanggaran siswa. Yang hanya baru di isi halaman nya itu Dasboard, Kelas, Dan pelanggaran saja. jadi hanya itu dahulu di tunggu ya update selanjutnya :D
